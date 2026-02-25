@@ -1,0 +1,84 @@
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+
+<title>Profil Usaha Buku</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<head>
+<html lang="id">
+<head> <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Produk Buku </title>
+<link rel="stylesheet" href="style.css"/>
+</head>    
+<body>
+    <header>
+        <img src="images/header 1.png">
+    </header>
+    
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="bedah-buku.html">Bedah Buku</a></li>
+        <li><a href="testimoni.html">Testimoni</a></li>
+        <li><a href="tampil-testimoni.html">Testimoni Pembeli</a></li>
+    </ul>
+</nav>
+
+</body>  
+
+<main class="formulir">
+    <h2>Testimoni-testimoni pembeli:</h2>
+    <div id="daftarTestimoni"></div>
+    <button id="hapusSemua">Hapus Semua Testimoni</button>
+
+    <section>
+        <div id="daftar-Testimoni"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy ; 2026 Toko Buku KataKita</p>
+</footer>
+
+<script>
+    const container =
+    document.getElementById('daftarTestimoni');
+    const testimoniList =
+    JSON.parse(localStorage.getItem('testimoniList')) || [];
+
+    if(testimoniList.length === 0)
+{container.innerHTML = "<p>Belum Ada Testimoni.</p>";} 
+else{testimoniList.forEach((t,i) => {
+    const el = document.createElement('div');
+    el.className = 'testimoni-box';
+    el.innerHTML = `
+    <P><strong>Nama :</strong> ${t.nama}</p>
+     <P><strong>Asal :</strong> ${t.asal}</p>    
+     <P><strong>Email :</strong> ${t.email}</p>
+     <P><strong>Judul :</strong> ${t.judul}</p> 
+     <P><strong>Rating :</strong> ${t.rating}</p>  
+     <P><strong>Pesan :</strong> ${t.pesan}</p>
+       `;
+       container.appendChild(el);
+    }); 
+}
+</script>
+
+<script>
+document.getElementById("hapusSemua").addEventListener("click", function() {
+    const konfirmasi = confirm("Apakah Anda yakin ingin menghapus semua testimoni?");
+    
+    if (konfirmasi) {
+        localStorage.removeItem("testimoniList");
+        location.reload();
+    }
+});
+</script>
+</body>
+</html>
