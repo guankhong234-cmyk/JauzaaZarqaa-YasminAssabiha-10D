@@ -1,9 +1,98 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', Arial, sans-serif;
-    background: linear-gradient(135deg, #fdf4ff, #ede9fe, #fce7f3);
-    color: #444;
+    font-family: 'Poppins',Segoe UI, Arial, sans-serif;
+    background: linear-gradient(135deg, #fdf4ff, #ede9fe, #fce7f3,
+                                to bottom, #e9d8fd, #f3e8ff);
+    color: #444,#333;
+    
+}
+
+
+/* HEADER */
+.header img {
+    width: 100%;
+    display: block;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #cdb4db;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #3a0ca3;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: #9d4edd;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    color: #6a0dad;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* CONTENT CARD */
+.content-card {
+    background: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.content-card h2 {
+    color: #6a0dad;
+    margin-bottom: 20px;
+}
+
+.content-card ul {
+    line-height: 1.8;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #cdb4db;
+    margin-top: 40px;
 }
 
 /* ===== JUDUL ===== */
@@ -167,5 +256,6 @@ form button {
 form button:hover {
     opacity: 0.85;
 }
+
 
 
