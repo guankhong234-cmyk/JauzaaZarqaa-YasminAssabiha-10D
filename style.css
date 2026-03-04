@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins',Segoe UI, Arial, sans-serif;
     background: linear-gradient(135deg, #fdf4ff, #ede9fe, #fce7f3,
                                 to bottom, #e9d8fd, #f3e8ff);
-    color: #444,#333;
+    color: #444;
     
 }
 
@@ -256,6 +256,7 @@ form button {
 form button:hover {
     opacity: 0.85;
 }
+
 
 
 
