@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins',Segoe UI, Arial, sans-serif;
-    background: linear-gradient(135deg, #fdf4ff, #ede9fe, #fce7f3,
-                                to bottom, #e9d8fd, #f3e8ff);
+    background: linear-gradient(135deg, #fdf4ff, #ede9fe, #fce7f3);
     color: #444;
     
 }
@@ -256,6 +255,7 @@ form button {
 form button:hover {
     opacity: 0.85;
 }
+
 
 
 
