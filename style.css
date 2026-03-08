@@ -66,6 +66,72 @@ body {
     line-height: 1.6;
 }
 
+/* HEADER HALAMAN EVENT */
+.page-header{
+    text-align:center;
+    padding:40px 20px;
+    background:#f3e8ff;
+}
+
+.page-header h1{
+    color:#6a4c93;
+    margin-bottom:10px;
+}
+
+.page-header p{
+    color:#555;
+    font-size:16px;
+}
+
+/* CONTAINER EVENT */
+.event-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+/* CARD EVENT */
+.event{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.event:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* GAMBAR EVENT */
+.event img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* JUDUL EVENT */
+.event h2{
+    font-size:18px;
+    color:#6a4c93;
+    margin-bottom:10px;
+}
+
+/* TEXT EVENT */
+.event p{
+    font-size:14px;
+    margin:5px 0;
+    color:#444;
+}
+
+.event strong{
+    color:#000;
+}
+
 /* CONTENT CARD */
 .content-card {
     background: white;
@@ -117,6 +183,101 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 25px;
     padding: 30px;
+}
+/* SECTION KONTAK */
+.contact-section{
+    padding: 60px 10%;
+    background: #f5f5f5;
+}
+
+/* CONTAINER */
+.contact-container{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* INFO TOKO */
+.contact-info{
+    flex: 1;
+}
+
+.contact-info h1{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* BOX INFO */
+.info-box{
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-box h3{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.info-box p{
+    font-size: 14px;
+    color: #666;
+}
+
+/* FORM KONTAK */
+.contact-form{
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-form h2{
+    margin-bottom: 20px;
+}
+
+/* FORM GROUP */
+.form-group{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group input,
+.form-group textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form-group textarea{
+    height: 120px;
+    resize: none;
+}
+
+/* BUTTON */
+button{
+    padding: 10px 20px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #45a049;
 }
 
 /* ===== CARD PRODUK ===== */
@@ -293,6 +454,7 @@ form button:hover {
 .testimoni-terkirim{
     margin-top:20px;
 }
+
 
 
 
